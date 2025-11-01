@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Code Magician</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-gray-800 flex flex-col min-h-screen">
+    <!-- Header (Consistent) -->
+    <header class="border-b border-gray-200">
+      <nav
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Left Side: Logo & Nav -->
+        <div class="flex items-center space-x-8">
+          <a href="index.html" class="font-bold text-xl text-gray-900"
+            >code magician</a
+          >
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="pricing.html" class="text-gray-600 hover:text-gray-900"
+              >pricing</a
+            >
+            <a href="#" class="text-gray-600 hover:text-gray-900">about</a>
+          </div>
+        </div>
+        <!-- Right Side: Auth -->
+        <div class="flex items-center space-x-4">
+          <a href="login.html" class="text-gray-600 hover:text-gray-900"
+            >sign in</a
+          >
+          <a
+            href="register.html"
+            class="px-4 py-2 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-700"
+          >
+            start for free
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-12 md:py-20">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-bold text-gray-900 mb-4">Get in touch</h1>
+          <p class="text-lg text-gray-600">
+            We'd love to hear from you. Please fill out the form below or
+            contact us directly.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <form action="#" method="POST" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">
+                Your Name
+              </label>
+              <div class="mt-1">
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  class="block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Email address
+              </label>
+              <div class="mt-1">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Message
+              </label>
+              <div class="mt-1">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                ></textarea>
+              </div>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="w-full flex justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+
+          <!-- Contact Info -->
+          <div class="space-y-6 text-gray-600">
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">Email Us</h3>
+              <p>For general inquiries, email us at:</p>
+              <a
+                href="mailto:support@codemagician.com"
+                class="text-gray-900 font-medium hover:underline"
+                >support@codemagician.com</a
+              >
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">Sales</h3>
+              <p>For enterprise plans and sales, contact:</p>
+              <a
+                href="mailto:sales@codemagician.com"
+                class="text-gray-900 font-medium hover:underline"
+                >sales@codemagician.com</a
+              >
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                Our Office
+              </h3>
+              <p>Piața Consiliul Europei 2D</p>
+              <p>Timisoara, 300627</p>
+              <p>Romania</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Separator -->
+    <hr class="border-gray-200" />
+
+    <!-- Footer (Consistent) -->
+    <footer class="container mx-auto px-4 py-12">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <!-- Left Side -->
+        <div
+          class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8"
+        >
+          <span class="font-bold text-xl text-gray-900">code magician</span>
+          <div class="flex items-center space-x-6">
+            <a href="#" class="text-gray-600 hover:text-gray-900">product</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">resource</a>
+            <a href="contact.html" class="text-gray-600 hover:text-gray-900"
+              >contact</a
+            >
+          </div>
+        </div>
+        <!-- Right Side: Social -->
+        <div class="flex items-center space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-500 hover:text-gray-900">social</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900">x</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900">linkedin</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

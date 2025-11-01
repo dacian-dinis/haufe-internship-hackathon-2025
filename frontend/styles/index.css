@@ -1,0 +1,11 @@
+/* Apply Inter font */
+body {
+  font-family: "Inter", sans-serif;
+}
+/* Simple border for code blocks */
+.code-block {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #f8fafc;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Code Magician</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-gray-800 flex flex-col min-h-screen">
+    <!-- Header (Same as index.html) -->
+    <header class="border-b border-gray-200">
+      <nav
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Left Side: Logo & Nav -->
+        <div class="flex items-center space-x-8">
+          <a href="index.html" class="font-bold text-xl text-gray-900"
+            >code magician</a
+          >
+          <div class="hidden md:flex items-center space-x-6">
+            <a href="#" class="text-gray-600 hover:text-gray-900">pricing</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">about</a>
+          </div>
+        </div>
+        <!-- Right Side: Auth -->
+        <div class="flex items-center space-x-4">
+          <a href="login.html" class="text-gray-600 hover:text-gray-900"
+            >sign in</a
+          >
+          <a
+            href="register.html"
+            class="px-4 py-2 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-700"
+          >
+            start for free
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-12 md:py-20">
+      <div class="max-w-md mx-auto bg-white">
+        <h1 class="text-3xl font-bold text-center text-gray-900 mb-8">
+          Create your free account
+        </h1>
+
+        <form id="register-form" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">
+              Name
+            </label>
+            <div class="mt-1">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+                class="block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">
+              Email address
+            </label>
+            <div class="mt-1">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                class="block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              for="password"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Password
+            </label>
+            <div class="mt-1">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                required
+                class="block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              for="confirm-password"
+              class="block text-sm font-medium text-gray-700"
+            >
+              Confirm Password
+            </label>
+            <div class="mt-1">
+              <input
+                id="confirm-password"
+                name="confirm-password"
+                type="password"
+                autocomplete="new-password"
+                required
+                class="block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+              />
+            </div>
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              class="w-full flex justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+            >
+              Create account
+            </button>
+          </div>
+        </form>
+
+        <p class="mt-6 text-center text-sm text-gray-600">
+          Already have an account?
+          <a
+            href="login.html"
+            class="font-medium text-gray-900 hover:underline"
+          >
+            Sign in
+          </a>
+        </p>
+      </div>
+    </main>
+
+    <!-- Separator -->
+    <hr class="border-gray-200" />
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="container mx-auto px-4 py-12">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <!-- Left Side -->
+        <div
+          class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8"
+        >
+          <span class="font-bold text-xl text-gray-900">code magician</span>
+          <div class="flex items-center space-x-6">
+            <a href="#" class="text-gray-600 hover:text-gray-900">product</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">resource</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">contact</a>
+          </div>
+        </div>
+        <!-- Right Side: Social -->
+        <div class="flex items-center space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-500 hover:text-gray-900">social</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900">x</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900">linkedin</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const form = document.getElementById("register-form");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault(); // Prevent default form submission
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+        const confirmPassword =
+          document.getElementById("confirm-password").value;
+
+        // Simple client-side validation
+        if (password !== confirmPassword) {
+          alert("Passwords do not match");
+          return;
+        }
+
+        try {
+          const res = await fetch("/auth/register", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, email, password }),
+          });
+
+          const data = await res.json();
+
+          if (!res.ok) {
+            alert(data.error || "Registration failed");
+            return;
+          }
+
+          alert("Registration successful! You can now log in.");
+          window.location.href = "login.html"; // redirect to login
+        } catch (err) {
+          console.error(err);
+          alert("Something went wrong. Try again.");
+        }
+      });
+    </script>
+  </body>
+</html>
